@@ -7,7 +7,7 @@ import Helmet from "react-helmet"
 
 ReactDOM.render(
   <React.StrictMode>
-    <Helmet title='t'/>
+    <Helmet title='hat'/>
     <MainPage/>
   </React.StrictMode>,
   document.getElementById('root')

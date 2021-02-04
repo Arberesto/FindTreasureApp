@@ -13,12 +13,11 @@ export default class MainPage extends React.Component {
     }
 
     buttonOnClick() {
-        let url="http://api.findtreasure.pirate";
-        let junk=':s//w';
 
-        //call the api to find treasure
-
-        //findTheTreasure(url, junk);
+        //call the function to find treasure, it uses url and destination
+        //let url="https://api.findtreasure.com";
+        //let destination='://w';
+        
         _3words();
     }
 

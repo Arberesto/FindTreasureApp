@@ -30,16 +30,9 @@ export function callAPI (url, destination) {
     }
 
     // 2 error
-    let buttons = document.getElementsByClassName('main__button-answer');
-    //alert(buttons.length)
-    let button = buttons[0];
-    //alert(button.onclick);
 
-    if (! button.onclick.toString().includes("_3words")) {
-        result +=1;
-    } else {
-        isAlerted = true;
-    }
+    // if you call this method, you're not using _3words, so you get first issue fixed
+    result +=1;
 
     //alert (document.title);
 
@@ -68,8 +61,9 @@ export function callAPI (url, destination) {
         condAlert('Я вижу мусор, сначало нужно прибраться', isAlerted);
         isAlerted = true;
     }
+    condAlert('Seems like you have all pieces of my map, enjoy', (result !== 5));
 
-    condAlert('Seems like you have all pieces of my map, enjoy', isAlerted)
+    alert( (5-result) + ' issue left');
 
     return result;
 }
