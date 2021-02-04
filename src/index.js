@@ -3,9 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import MainPage from "./mainPage/MainPage";
+import Helmet from "react-helmet"
 
 ReactDOM.render(
   <React.StrictMode>
+    <Helmet title='hat'/>
     <MainPage/>
   </React.StrictMode>,
   document.getElementById('root')
