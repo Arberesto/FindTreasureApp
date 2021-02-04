@@ -67,14 +67,3 @@ export function callAPI (url, destination) {
 
     return result;
 }
-
-export function getSolvedIssuesNumber() {
-    let result = 0;
-    // for (let i = 0; i < 5; i++) {
-    //     //alert(window.errorFixed[i]);
-    //     if (window.errorFixed[i]) {
-    //         result +=1;
-    //     }
-    // }
-    return result;
-}

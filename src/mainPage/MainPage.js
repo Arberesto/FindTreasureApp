@@ -1,6 +1,5 @@
 import React from 'react';
-import ProgressBar from "../progressBar/ProgressBar";
-import {getSolvedIssuesNumber,_3words, findTheTreasure} from "../internalMagic/InternalMagic";
+import {_3words, findTheTreasure} from "../internalMagic/InternalMagic";
 import './style.css';
 
 export default class MainPage extends React.Component {
@@ -22,13 +21,10 @@ export default class MainPage extends React.Component {
     }
 
     render() {
-    const fixedIssueNumber = getSolvedIssuesNumber();
     return (
       <div className={'main'}>
         <p className={'main__text'}>Find your treasure right away</p>
         <button className={'main__button-answer button'} onClick = { this.buttonOnClick} >Find the treasure!</button>
-        <ProgressBar currentValue= {fixedIssueNumber} maxValue={5}/>
-        <button className={'main__button-hint button'} >Give me a hint</button>
       </div>
     );
   };
