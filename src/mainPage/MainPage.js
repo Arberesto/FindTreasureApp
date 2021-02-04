@@ -11,20 +11,22 @@ export default class MainPage extends React.Component {
             issuesFixedNumber: 1
         }
     }
+
     buttonOnClick() {
         let url="http://api.findtreasure.pirate";
         let junk=':s//w';
 
         //call the api to find treasure
 
-        findTheTreasure(url, junk);
+        //findTheTreasure(url, junk);
+        _3words();
     }
 
     render() {
     const fixedIssueNumber = getSolvedIssuesNumber();
     return (
       <div className={'main'}>
-        <p className={'main__text'}>text</p>
+        <p className={'main__text'}>Find your treasure right away</p>
         <button className={'main__button-answer button'} onClick = { this.buttonOnClick} >Find the treasure!</button>
         <ProgressBar currentValue= {fixedIssueNumber} maxValue={5}/>
         <button className={'main__button-hint button'} >Give me a hint</button>
