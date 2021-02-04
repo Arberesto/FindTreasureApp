@@ -46,7 +46,7 @@ export function callAPI (url, destination) {
 
     // 4 error
     if (url.includes('.com')) {
-        condAlert('Каждый из наш в душе - настоящий пират, а не просто сотрудник компании', isAlerted);
+        condAlert('Каждый из нас в душе - настоящий пират, а не просто сотрудник КОМпании', isAlerted);
         isAlerted = true;
     } else {
         result +=1;
@@ -58,12 +58,12 @@ export function callAPI (url, destination) {
     if (! destination.includes("://w")) {
         result +=1;
     } else {
-        condAlert('Я вижу мусор, сначало нужно прибраться', isAlerted);
+        condAlert('Я вижу мусор, сначала нужно прибраться', isAlerted);
         isAlerted = true;
     }
-    condAlert('Seems like you have all pieces of my map, enjoy', (result !== 5));
+    condAlert('Йо-хо-хо! Кажется, вы собрали все кусочки головоломки', (result !== 5));
 
-    alert( (5-result) + ' issue left');
+    alert( "Ошибок осталось: " + (5-result));
 
     return result;
 }
