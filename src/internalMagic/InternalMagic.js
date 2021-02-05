@@ -4,12 +4,8 @@ let url="https://api.findtreasure.com";
 let destination='://w';
 let wasFindTheTreasureExecuted = false;
 
-export function f() {
-    return resultText;
-}
-
 export function _3words () {
-    alert('Так дайте металлоискатель')
+    wasFindTheTreasureExecuted = false;
 }
 
 //function call our API to get the treasure
@@ -24,7 +20,8 @@ export function checkCurrentState() {
     let result = 0;
 
     if (! wasFindTheTreasureExecuted) {
-        resultText = 'Так дайте металлоискатель';
+        resultText = 'А меня зачем позвали? Вам нужен кто-то другой"';
+        errorsText = "Ошибок осталось: " + 5
     }
     else {
         result +=1;
@@ -44,7 +41,7 @@ export function checkCurrentState() {
                         result += 1;
                         resultText = 'Йо-хо-хо! Кажется, вы собрали все кусочки головоломки';
                     } else {
-                        resultText = 'Я вижу мусор, сначала нужно прибраться';
+                        resultText = 'Ты близко, уточни свое место назначения';
                     }
                 }
             } else {

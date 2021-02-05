@@ -7,15 +7,14 @@ export default class MainPage extends React.Component {
         super(props);
         this.buttonOnClick = this.buttonOnClick.bind(this);
         this.state = {
-            issuesFixedNumber: 1,
-            result: checkCurrentState(),
-            errorsText: getErrorsText()
+            result: '',
+            errorsText: ''
         }
     }
 
     buttonOnClick() {
 
-        //call the function to find treasure, it uses url and destination
+        //call the function to find the treasure, it uses url and destination
         //let url="https://api.findtreasure.com";
         //let destination='://w';
         _3words()
