@@ -26,6 +26,9 @@ sketch
 
 .idea
 
+public
+public/
+
 # User-specific stuff
 .idea/**/workspace.xml
 .idea/**/tasks.xml
