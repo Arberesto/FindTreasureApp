@@ -1,4 +1,4 @@
-A joke/puzzle project, to get `https://what3words.com` link from errors in code.
+A joke/puzzle project, to get 'TREASURE'!.
 
 Made with React
 
