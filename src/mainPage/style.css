@@ -1,21 +1,21 @@
 .main {
     max-width: 900px;
     margin: 90px auto;
-    font-family: sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: sans-serif;
 }
 
 .main__text {
-    font-size: 23px;
+    font-size: 30px;
     width: fit-content;
 }
 
 .button {
     width: fit-content;
     background: #50D5AD;
-    box-shadow: 0px 2px 4px rgba(69, 211, 168, 0.3);
+    box-shadow: 0 2px 4px rgba(69, 211, 168, 0.3);
     border-radius: 20px;
     border: 0;
     font-weight: 500;
@@ -36,6 +36,28 @@
     margin-bottom: 30px;
 }
 
-.main__button-hint {
-    font-size: 13px;
+.main__result-text {
+    font-family: "Marck Script", sans-serif;
+    font-size: 28px;
+    background-color: #f8f5de;
+    background-image: linear-gradient(to right, rgba(255,210,0,0.4), rgba(200, 160, 0, 0.1) 11%, rgba(0,0,0,0) 35%, rgba(200, 160, 0, 0.1) 65%);
+    box-shadow: inset 0 0 75px rgba(255,210,0,0.3), inset 0 0 20px rgba(255,210,0,0.4), inset 0 0 30px rgb(226 226 226 / 80%);
+    color: rgba(0,0,0,0.5);
+    width: 15em;
+    letter-spacing: 0.05em;
+    line-height: 1.8;
+    min-width: 700px;
+    min-height: 30vh;
+    padding: 5%;
+    box-sizing: border-box;
+    clip-path: polygon(5px 0,100% 0,100% calc(100% - 20px), calc(100% - 30px) 100%,0 100%,0 5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.result-text:not(:last-child) {
+    margin: 0;
 }
